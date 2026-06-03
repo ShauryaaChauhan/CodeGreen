@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <title>GreenRoute Navigator</title>
+</head>
+<body>
+   <div class="container">
+    <h1>GreenRoute Navigator</h1>
+    
+    <h3 class="transport-title">Which vehicle are you using?</h3>
+
+    <select id="transport">
+        <option value="140">Car (Petrol)</option>
+        <option value="90">Bus (Diesel)</option>
+        <option value="70">Motorcycle</option>
+        <option value="0">Bicycle (0g/km)</option>
+    </select>
+    
+    <div class="search-container">
+        <input id="search" type="search" placeholder="Search places, addresses or landmarks" aria-label="Search places" />
+        <ul id="search-results" class="search-results" role="listbox" aria-label="Search results"></ul>
+    </div>
+  
+    <h2 id="result">Result: 0g CO₂</h2>
+
+    <div id='map' style='width: 100%; height: 400px; margin-top: 20px;'></div>
+</div>
+    <script src="main.js"></script>
+    <div class="note-box">Note: overseas travel by vehicle is not possible</div>
+    <div class="info-box">
+    <h3>Emission Factors (Nepal)</h3>
+    <table>
+        <tr>
+            <th>Mode</th>
+            <th>Gram of CO₂/km</th>
+        </tr>
+        <tr>
+            <td>Car (Petrol)</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td>Bus (Diesel)</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>Motorcycle</td>
+            <td>70</td>
+        </tr>
+        
+           
+        
+    </table>
+</div>
+<div class="container calculator">
+    <h1>Carbon Footprint Calculator</h1>
+
+    
+        <div id="result">Calculate your trip to see results.</div>
+        <table>
+            <tr>
+                <td>Tree Time:</td>
+                <td id="tree-time">--</td>
+            </tr>
+        </table>
+    
+
+    <div id="map" style="height: 400px;"></div>
+</div>
+
+</body>
+</html>
+
+<!-- add the CSSS !!-->
