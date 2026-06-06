@@ -19,7 +19,7 @@ How I built it
 This makes the map move around.
 
 2 OSRM
-This is a thing that finds the best way to drive between two places
+This is a routing engine that finds the best distance to drive between two places.
 
 3 Nominatim 
 This lets you type in a place name and it finds it on the map for you
