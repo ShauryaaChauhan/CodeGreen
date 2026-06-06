@@ -87,11 +87,11 @@ button:hover {
     background-color: #ffffff;
     width: 320px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    position: sticky;
+    
     top: 80px;
     margin: 40px 40px 0 auto;
     z-index: 1200;
-    position: fixed;
+    
 }
 
 /* Table styling for data */
